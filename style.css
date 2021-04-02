@@ -1,0 +1,19 @@
+body {
+    background-color: #ddd;
+}
+
+td {
+    border: 1px solid black;
+   
+}
+button{
+    background-color:#ddc
+}
+
+h1 {
+    text-align: center;
+}
+
+*{
+    padding: 30px;
+}

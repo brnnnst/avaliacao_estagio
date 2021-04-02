@@ -63,5 +63,9 @@ function main() {
     usuarios.forEach((element, index) => {
         let linha = criaLinha(element, index)
         tabela.appendChild(linha);
+        let h1 = document.getElementById("titulo_1");
+        h1.innerText = "Recebendo API";
     });
 }
+
+main();
