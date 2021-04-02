@@ -1,3 +1,4 @@
+// Função que faz a requisição e retorna por Get uma resposta
 function fazGet(url) {
     let request = new XMLHttpRequest()
     request.open("GET", url, false)
@@ -5,6 +6,8 @@ function fazGet(url) {
     return request.responseText
 }
 
+// // Funcão que irá criar uma segunda tabela para 
+// mostrar o titulo e o corpo especifico de acordo com o clique no botao
 function exibirPost(index){  
     let titulo_1 = document.getElementById("titulo_1");
     titulo_1.style.display = "none";
@@ -29,6 +32,7 @@ function exibirPost(index){
 }
 
 
+// Função que irá criar as linhas e jogar os valores dentro dela
 function criaLinha(usuario, index) {
     linha = document.createElement("tr");
     tdId = document.createElement("td");
@@ -56,6 +60,9 @@ function criaLinha(usuario, index) {
 
     return linha
 }
+
+// // função principal, recebe a resposta  do get e converte para json 
+// armazena dentro de uma variavel e chama a função construtora da tabela
 
 function main() {
     data = fazGet("https://jsonplaceholder.typicode.com/posts")
